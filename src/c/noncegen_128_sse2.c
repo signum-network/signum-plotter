@@ -5,9 +5,9 @@
 #include "mshabal_128_sse2.h"
 #include "sph_shabal.h"
 
-sph_shabal_context global_32;
-mshabal128_context global_128;
-mshabal128_context_fast global_128_fast;
+static sph_shabal_context global_32;
+static mshabal128_context global_128;
+static mshabal128_context_fast global_128_fast;
 
 void init_shabal_sse2() {
     sph_shabal256_init(&global_32);
