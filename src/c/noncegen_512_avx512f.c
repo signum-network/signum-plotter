@@ -5,9 +5,9 @@
 #include "mshabal_512_avx512f.h"
 #include "sph_shabal.h"
 
-sph_shabal_context global_32;
-mshabal512_context global_512;
-mshabal512_context_fast global_512_fast;
+static sph_shabal_context global_32;
+static mshabal512_context global_512;
+static mshabal512_context_fast global_512_fast;
 
 void init_shabal_avx512f() {
     sph_shabal256_init(&global_32);
